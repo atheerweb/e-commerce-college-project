@@ -663,6 +663,9 @@ p {
     border-color: #fe7865;
     color: #fff; }
 
+    .single-product-items{
+      height: 35em;
+    }
 .single-product-items .product-item-image {
   position: relative;
   overflow: hidden; }
@@ -830,7 +833,8 @@ p {
     color: #fe7865; }
   .single-services .services-content .title {
     font-size: 20px;
-    color: #fe7865; }
+    color: #fe7865;
+   }
 
 /*===========================
      7.SHOWCASE css 

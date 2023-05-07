@@ -4,8 +4,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-import './bootstrap';
-import { createApp } from 'vue';
+import "./bootstrap";
+import { createApp } from "vue";
+import Vue3Toastify from "vue3-toastify";
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -15,8 +16,12 @@ import { createApp } from 'vue';
 
 const app = createApp({});
 
-import ExampleComponent from './components/ExampleComponent.vue';
-app.component('example-component', ExampleComponent);
+// main.ts
+
+app.use(Vue3Toastify);
+import AddToCartButton from "./components/AddToCartButton.vue";
+
+app.component("add-to-cart-button", AddToCartButton);
 
 /**
  * The following block of code may be used to automatically register your
@@ -36,4 +41,4 @@ app.component('example-component', ExampleComponent);
  * scaffolding. Otherwise, you will need to add an element yourself.
  */
 
-app.mount('#app');
+app.mount("#app");
