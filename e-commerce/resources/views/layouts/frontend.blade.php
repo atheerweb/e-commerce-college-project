@@ -39,8 +39,11 @@
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
-    <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <!--====== Scripts ======-->
+
+    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+
+    @vite(['resources/js/app.js'])
 </head>
 
 <body>
@@ -98,7 +101,9 @@
                                         <a data-scroll-nav="0" href="#contact">Contact</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a data-scroll-nav="0" href="{{ route('cart') }}">Cart</a>
+
+
+                                        <cart />
                                     </li>
 
                                     @guest

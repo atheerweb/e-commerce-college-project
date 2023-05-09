@@ -20,3 +20,4 @@ Route::get('/', [ProductsController::class, 'index']);
 Auth::routes();
 
 Route::post('/cart', [CartsController::class, 'store'])->name('cart');
+Route::get('/cart', [CartsController::class, 'index'])->name('cart');

@@ -13,7 +13,13 @@ class CartsController extends Controller
      */
     public function index()
     {
-        //
+        // get user cart
+       $user_cart = Cart::where('user_id', auth()->user()->id)->sum('quantity');
+
+       
+       if($user_cart){
+        return ['message'=> 'Cart updated','items'=>$user_cart];
+       }
     }
 
     /**
@@ -29,18 +35,33 @@ class CartsController extends Controller
      */
     public function store(Request $request)
     {
-       $product = Product::find($request->get('product_id'))->first();
+        // get product data
+       $product = Product::where('id',$request->get('product_id'))->first();
+     
+       // check if product found in cart
+       $product_found_in_cart = Cart::where('product_id' , $request->get('product_id') )->where('user_id', auth()->user()->id)->pluck('id');
 
-    $cart = Cart::create([
-        'product_id' => $product->id,
-        'quantity'   => 1,
-        'price'      => $product->sale_price,
-        'user_id'    => auth()->user()->id,
-       ]);
 
-       if($cart){
-         return ['message'=> 'Cart Updated'];
-       }
+  
+
+        if($product_found_in_cart->isEmpty()){
+            $cart = Cart::create([
+                'product_id' => $product->id,
+                'quantity'   => 1,
+                'price'      => $product->sale_price,
+                'user_id'    => auth()->user()->id,
+            ]);
+        }
+        else {
+            $cart = Cart::where('product_id' , $request->get('product_id'))->increment('quantity');
+        }
+
+        // get user cart
+       $user_cart = Cart::where('user_id', auth()->user()->id)->sum('quantity');
+    
+        if($cart){
+         return ['message'=> 'Cart Updated','items'=>$user_cart];
+        }
     }
 
     /**

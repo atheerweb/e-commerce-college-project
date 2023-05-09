@@ -7,6 +7,9 @@
 import "./bootstrap";
 import { createApp } from "vue";
 import Vue3Toastify from "vue3-toastify";
+import { createPinia } from 'pinia'
+import mdiVue from 'mdi-vue/v3'
+import * as mdijs from '@mdi/js'
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -14,14 +17,34 @@ import Vue3Toastify from "vue3-toastify";
  * to use in your application's views. An example is included for you.
  */
 
+
 const app = createApp({});
+const pinia = createPinia()
 
 // main.ts
 
 app.use(Vue3Toastify);
 import AddToCartButton from "./components/AddToCartButton.vue";
+import Cart from "./components/Cart.vue";
 
+
+
+app.use(pinia)
 app.component("add-to-cart-button", AddToCartButton);
+app.component("cart", Cart);
+app.use(mdiVue, {
+    icons: mdijs
+  }) 
+
+
+
+
+
+
+
+
+
+
 
 /**
  * The following block of code may be used to automatically register your
