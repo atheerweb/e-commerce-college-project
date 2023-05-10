@@ -78,7 +78,7 @@
                             </button>
 
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul id="nav" class="navbar-nav ml-auto">
+                                <ul id="nav" class="navbar-nav ml-auto d-flex justify-center align-items-center">
                                     <li class="nav-item active">
                                         <a data-scroll-nav="0" href="#home">Home</a>
                                     </li>
@@ -100,12 +100,19 @@
                                     <li class="nav-item">
                                         <a data-scroll-nav="0" href="#contact">Contact</a>
                                     </li>
-                                    <li class="nav-item">
+                                    @auth
+                                        <li class="nav-item">
 
 
-                                        <cart />
-                                    </li>
+                                            <navigation-cart />
+                                        </li>
 
+                                        <li class="nav-item">
+
+                                            <avatar-icon />
+
+                                        </li>
+                                    @endauth
                                     @guest
                                         <li class="nav-item">
                                             <a href="{{ route('login') }}">Login</a>
@@ -116,6 +123,7 @@
                                         </li>
 
                                     @endguest
+
 
                                 </ul> <!-- navbar nav -->
                             </div>

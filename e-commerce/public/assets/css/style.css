@@ -836,6 +836,18 @@ p {
     color: #fe7865;
    }
 
+   .pointer{
+    cursor: pointer;
+   }
+
+   .forgot-password-title {
+    color: #fe7865;
+   }
+   .forgot-password-title:hover {
+    
+    color: #c55a4b;
+   }
+
 /*===========================
      7.SHOWCASE css 
 ===========================*/

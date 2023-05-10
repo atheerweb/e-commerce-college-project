@@ -7,9 +7,9 @@
 import "./bootstrap";
 import { createApp } from "vue";
 import Vue3Toastify from "vue3-toastify";
-import { createPinia } from 'pinia'
-import mdiVue from 'mdi-vue/v3'
-import * as mdijs from '@mdi/js'
+import { createPinia } from "pinia";
+import mdiVue from "mdi-vue/v3";
+import * as mdijs from "@mdi/js";
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -17,35 +17,34 @@ import * as mdijs from '@mdi/js'
  * to use in your application's views. An example is included for you.
  */
 
-
 const app = createApp({});
-const pinia = createPinia()
-
-// main.ts
+const pinia = createPinia();
 
 app.use(Vue3Toastify);
 import AddToCartButton from "./components/AddToCartButton.vue";
-import Cart from "./components/Cart.vue";
+import NavigationCart from "./components/NavigationCart.vue";
+import AvatarIcon from "./components/AvatarIcon.vue";
 
+// Vuetify
+import "vuetify/styles";
+import { createVuetify } from "vuetify";
+import * as components from "vuetify/components";
+import * as directives from "vuetify/directives";
 
-
-app.use(pinia)
+app.use(pinia);
 app.component("add-to-cart-button", AddToCartButton);
-app.component("cart", Cart);
+app.component("navigation-cart", NavigationCart);
+app.component("avatar-icon", AvatarIcon);
 app.use(mdiVue, {
-    icons: mdijs
-  }) 
+    icons: mdijs,
+});
 
+const vuetify = createVuetify({
+    components,
+    directives,
+});
 
-
-
-
-
-
-
-
-
-
+app.use(vuetify);
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

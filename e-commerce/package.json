@@ -17,6 +17,8 @@
     "dependencies": {
         "@mdi/js": "^7.2.96",
         "mdi-vue": "^3.0.13",
-        "vue3-toastify": "^0.1.8"
+        "pinia": "^2.0.36",
+        "vue3-toastify": "^0.1.8",
+        "vuetify": "^3.2.3"
     }
 }
