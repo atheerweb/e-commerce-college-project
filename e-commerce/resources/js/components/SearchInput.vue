@@ -2,22 +2,36 @@
 import axios from "axios";
 import { ref } from "vue";
 const search_text = ref("");
+const loading = ref(false);
+const items = ref([]);
 const search = async () => {
-    await axios.get(`/search/${search_text.value}`);
+    if (search_text.value.length > 3) {
+        loading.value = true;
+        const { data } = await axios.get(`/search/${search_text.value}`);
+        items.value = data;
+        loading.value = false;
+    } else {
+        items.value = [];
+    }
 };
 </script>
 
 <template>
     <v-autocomplete
         v-model:search="search_text"
+        :loading="loading"
+        :items="items"
+        item-title="name"
         density="compact"
         label="Search"
         prepend-inner-icon="mdi-magnify"
         append-inner-icon=""
         single-line
         hide-details
+        return-object
         variant="outlined"
-        @update:search="search(search_text)"
+        no-data-text="no results found"
+        @update:search="search"
     ></v-autocomplete>
 </template>
 
