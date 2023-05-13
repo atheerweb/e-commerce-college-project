@@ -24,24 +24,27 @@ app.use(Vue3Toastify);
 import AddToCartButton from "./components/AddToCartButton.vue";
 import NavigationCart from "./components/NavigationCart.vue";
 import AvatarIcon from "./components/AvatarIcon.vue";
+import SearchInput from "./components/SearchInput.vue";
 
 // Vuetify
 import "vuetify/styles";
 import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
+import "@mdi/font/css/materialdesignicons.css"; // Ensure you are using css-loader
 
 app.use(pinia);
 app.component("add-to-cart-button", AddToCartButton);
 app.component("navigation-cart", NavigationCart);
 app.component("avatar-icon", AvatarIcon);
-app.use(mdiVue, {
-    icons: mdijs,
-});
+app.component("search-input", SearchInput);
 
 const vuetify = createVuetify({
     components,
     directives,
+    icons: {
+        defaultSet: "mdi", // This is already the default value - only for display purposes
+    },
 });
 
 app.use(vuetify);

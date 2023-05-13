@@ -11,7 +11,7 @@ onMounted(() => {
 <template>
     <div>
         <a data-scroll-nav="0" href="/cart">
-            <mdicon name="cart" class="my-icon" />
+            <v-icon icon="mdi-cart" class="my-icon" />
             <span class="cart-numbers">{{ cart_store.cart_count }}</span>
         </a>
     </div>

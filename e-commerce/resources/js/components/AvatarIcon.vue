@@ -11,7 +11,7 @@ const logout = async () => {
         <v-menu location="bottom">
             <template v-slot:activator="{ props }">
                 <v-avatar v-bind="props" color="#fe7865" class="pointer">
-                    <mdicon name="account" class="account-icon" />
+                    <v-icon icon="mdi-account" class="account-icon" />
                 </v-avatar>
             </template>
 
