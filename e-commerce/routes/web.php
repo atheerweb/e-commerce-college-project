@@ -21,3 +21,4 @@ Auth::routes();
 
 Route::post('/cart', [CartsController::class, 'store'])->name('cart');
 Route::get('/cart', [CartsController::class, 'index'])->name('cart');
+Route::get('/search/{name}', [ProductsController::class, 'search'])->name('search');

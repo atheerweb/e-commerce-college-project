@@ -69,6 +69,7 @@
                             <a class="navbar-brand" href="index.html">
                                 <img src="assets/images/logo.png" alt="Logo">
                             </a> <!-- Logo -->
+                            
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -79,7 +80,10 @@
 
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ml-auto d-flex justify-center align-items-center">
-                                    <li class="nav-item active">
+                                    <li style="width: 13em">
+                                        <search-input />
+                                    </li>
+                                    <li class="nav-item">
                                         <a data-scroll-nav="0" href="#home">Home</a>
                                     </li>
                                     <li class="nav-item">
@@ -97,6 +101,9 @@
                                     <li class="nav-item">
                                         <a data-scroll-nav="0" href="#blog">Blog</a>
                                     </li>
+
+
+
                                     <li class="nav-item">
                                         <a data-scroll-nav="0" href="#contact">Contact</a>
                                     </li>
