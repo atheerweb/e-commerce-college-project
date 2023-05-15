@@ -687,15 +687,15 @@
 
     <!--====== SERVICES PART START ======-->
 
-    <section id="service" class="services-area pt-125 pb-130">
+    <section id="about-us" class="services-area pt-125 pb-130">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-title pb-30">
                         <h5 class="mb-15">Our Story</h5>
-                        <h3 class="title mb-15">Build Your Sweet Home</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        <h3 class="title mb-15">the best for reasonable prices</h3>
+                        <p>furnish is business that seeks making online market for furniture to ease the proccess of buying
+                            and selling furniture with the finest qualities</p>
                     </div> <!-- section title -->
                 </div>
             </div>
@@ -703,8 +703,7 @@
                 <div class="col-lg-6">
                     <div class="services-left mt-45">
                         <div class="services">
-                            <img src="assets/images/services/services.jpg" alt="">
-                            <a href="#" class="main-btn mt-30">Read More <i class="lni-chevron-right"></i></a>
+                            <img src="assets/images/about-us.jpg" alt="">
                         </div> <!-- services btn -->
                     </div> <!-- services left -->
                 </div>
@@ -767,44 +766,7 @@
 
     <!--====== SERVICES PART ENDS ======-->
 
-    <!--====== SHOWCASE PART START ======-->
 
-    <section id="showcase" class="showcase-area pt-100 pb-130">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="showcase-title pt-25">
-                        <h2 class="title">Showcase</h2>
-                    </div> <!-- showcase title -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="showcase-title pt-25">
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempo.</p>
-                    </div> <!-- showcase title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="showcase-active mt-65">
-                        <div class="single-showcase">
-                            <img src="assets/images/showcase/t-1.jpg" alt="Testimonial">
-                            <a href="#" class="main-btn">Full Preview</a>
-                        </div> <!-- single showcase -->
-                        <div class="single-showcase">
-                            <img src="assets/images/showcase/t-2.jpg" alt="Testimonial">
-                            <a href="#" class="main-btn">Full Preview</a>
-                        </div> <!-- single showcase -->
-                    </div> <!-- showcase active -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== SHOWCASE PART ENDS ======-->
 
     <!--====== TEAM PART START ======-->
 
@@ -814,8 +776,7 @@
                 <div class="col-lg-6">
                     <div class="section-title text-center pb-25">
                         <h3 class="title mb-15">Our Expert Team</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor incididunt
-                            ut labore et dolore magna aliqua.</p>
+                        <p>meet our team of professional furntiure architect</p>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -823,67 +784,188 @@
                 <div class="col-lg-3 col-md-6 col-sm-8">
                     <div class="single-temp text-center mt-30">
                         <div class="team-image">
-                            <img src="assets/images/team/t-1.jpg" alt="Team">
+                            <img src="assets/images/team/yousouf.png" alt="Team">
                         </div>
                         <div class="team-content mt-30">
-                            <h4 class="title mb-10"><a href="#">Celina Gomez</a></h4>
-                            <span>FOUNDER</span>
-                            <ul class="social mt-15">
-                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni-instagram"></i></a></li>
-                            </ul>
+                            <h4 class="title mb-10">
+                                <a href="#">
+                                    Yousouf Mustafa Muhammad
+                                </a>
+                            </h4>
+                            <span>34219</span>
+
+                        </div>
+                    </div> <!-- single temp -->
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="single-temp text-center mt-30">
+                        <div class="team-image">
+                            <img src="assets/images/team/Zeyad-ehab.jpg" alt="Team">
+                        </div>
+                        <div class="team-content mt-30">
+                            <h4 class="title mb-10"><a href="#">Zeyad Ehab</a></h4>
+                            <span>34292</span>
+
+                        </div>
+                    </div> <!-- single temp -->
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="single-temp text-center mt-30">
+                        <div class="team-image">
+                            <img src="assets/images/team/Aamer.jpg" alt="Team">
+                        </div>
+                        <div class="team-content mt-30">
+                            <h4 class="title mb-10"><a href="#">Aamer Mohamad</a></h4>
+                            <span>34303</span>
+
                         </div>
                     </div> <!-- single temp -->
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-8">
                     <div class="single-temp text-center mt-30">
                         <div class="team-image">
-                            <img src="assets/images/team/t-2.jpg" alt="Team">
+                            <img src="assets/images/team/islam.jpg" alt="Team">
                         </div>
                         <div class="team-content mt-30">
-                            <h4 class="title mb-10"><a href="#">Patric Green</a></h4>
-                            <span>Consultant</span>
-                            <ul class="social mt-15">
-                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni-instagram"></i></a></li>
-                            </ul>
+                            <h4 class="title mb-10"><a href="#">Islam Atef</a></h4>
+                            <span>34302</span>
+
                         </div>
                     </div> <!-- single temp -->
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-8">
                     <div class="single-temp text-center mt-30">
                         <div class="team-image">
-                            <img src="assets/images/team/t-3.jpg" alt="Team">
+                            <img src="assets/images/team/noureldin.jpg" alt="Team">
                         </div>
                         <div class="team-content mt-30">
-                            <h4 class="title mb-10"><a href="#">Mark Parker</a></h4>
-                            <span>Business Manager</span>
-                            <ul class="social mt-15">
-                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni-instagram"></i></a></li>
-                            </ul>
+                            <h4 class="title mb-10"><a href="#">
+                                    Nour El-Din Mahmoud
+                                </a>
+                            </h4>
+                            <span>34265</span>
+
+                        </div>
+                    </div> <!-- single temp -->
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="single-temp text-center mt-30">
+                        <div class="team-image">
+                            <img src="assets/images/team/mohmad.jpg" alt="Team">
+                        </div>
+                        <div class="team-content mt-30">
+                            <h4 class="title mb-10"><a href="#">Mohamad Khaled</a></h4>
+                            <span>34258</span>
+
+                        </div>
+                    </div> <!-- single temp -->
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="single-temp text-center mt-30">
+                        <div class="team-image">
+                            <img src="assets/images/team/abdelrahman.jpg" alt="Team">
+                        </div>
+                        <div class="team-content mt-30">
+                            <h4 class="title mb-10"><a href="#">Abdelrahman Ehab</a></h4>
+                            <span>73157</span>
+
+                        </div>
+                    </div> <!-- single temp -->
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="single-temp text-center mt-30">
+                        <div class="team-image">
+                            <img src="assets/images/team/ahmed-salama.jpg" alt="Team">
+                        </div>
+                        <div class="team-content mt-30">
+                            <h4 class="title mb-10"><a href="#">Ahmed Slama</a></h4>
+                            <span>34249</span>
+
                         </div>
                     </div> <!-- single temp -->
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-8">
                     <div class="single-temp text-center mt-30">
                         <div class="team-image">
-                            <img src="assets/images/team/t-4.jpg" alt="Team">
+                            <img src="assets/images/team/ahmed-el-hor.jpg" alt="Team">
                         </div>
                         <div class="team-content mt-30">
-                            <h4 class="title mb-10"><a href="#">Daryl Dixon</a></h4>
-                            <span>Marketing Manager</span>
-                            <ul class="social mt-15">
-                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni-instagram"></i></a></li>
-                            </ul>
+                            <h4 class="title mb-10"><a href="#">Ahmed Ebrahim</a></h4>
+                            <span> 73169</span>
+
                         </div>
                     </div> <!-- single temp -->
                 </div>
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="single-temp text-center mt-30">
+                        <div class="team-image">
+                            <img src="assets/images/team/khaled.jpg" alt="Team">
+                        </div>
+                        <div class="team-content mt-30">
+                            <h4 class="title mb-10"><a href="#">Zeyad khaled</a></h4>
+                            <span>34290</span>
+
+                        </div>
+                    </div> <!-- single temp -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="single-temp text-center mt-30">
+                        <div class="team-image">
+                            <img src="assets/images/team/omar.jpg" alt="Team">
+                        </div>
+                        <div class="team-content mt-30">
+                            <h4 class="title mb-10"><a href="#">Omar Muhammad</a></h4>
+                            <span>34295</span>
+
+                        </div>
+                    </div> <!-- single temp -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="single-temp text-center mt-30">
+                        <div class="team-image">
+                            <img src="assets/images/team/moty.jpg" alt="Team">
+                        </div>
+                        <div class="team-content mt-30">
+                            <h4 class="title mb-10"><a href="#">Ahmad Abd El Moty</a></h4>
+                            <span>34295</span>
+
+                        </div>
+                    </div> <!-- single temp -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="single-temp text-center mt-30">
+                        <div class="team-image">
+                            <img src="assets/images/team/samir.jpg" alt="Team">
+                        </div>
+                        <div class="team-content mt-30">
+                            <h4 class="title mb-10"><a href="#">Mahmoud Samir</a></h4>
+                            <span>73168</span>
+
+                        </div>
+                    </div> <!-- single temp -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="single-temp text-center mt-30">
+                        <div class="team-image">
+                            <img src="assets/images/team/adham.jpg" alt="Team">
+                        </div>
+                        <div class="team-content mt-30">
+                            <h4 class="title mb-10"><a href="#">Adham Muhammad</a></h4>
+                            <span>34248</span>
+
+                        </div>
+                    </div> <!-- single temp -->
+                </div>
+
+
             </div> <!-- row -->
         </div> <!-- container -->
     </section>
@@ -1058,7 +1140,7 @@
                                             <i class="lni-phone-handset"></i>
                                         </div>
                                         <div class="info-content">
-                                            <p>+88 1234 56789</p>
+                                            <p>+20 106 255 3212</p>
                                         </div>
                                     </div> <!-- single info -->
                                 </li>
@@ -1067,18 +1149,8 @@
                                         <div class="info-icon">
                                             <i class="lni-envelope"></i>
                                         </div>
-                                        <div class="info-content">
-                                            <p>contact@yourmail.com</p>
-                                        </div>
-                                    </div> <!-- single info -->
-                                </li>
-                                <li>
-                                    <div class="single-info mt-30">
-                                        <div class="info-icon">
-                                            <i class="lni-home"></i>
-                                        </div>
-                                        <div class="info-content">
-                                            <p>203, Envato Labs, Behind Alis Steet,Australia</p>
+                                        <div class="info-content text-truncate">
+                                            <p>yousoufmostafamuslim@gmail.com</p>
                                         </div>
                                     </div> <!-- single info -->
                                 </li>
@@ -1087,37 +1159,8 @@
                     </div>
                     <div class="col-lg-8">
                         <div class="contact-form">
-                            <form id="contact-form" action="assets/contact.php" method="post" data-toggle="validator">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="single-form form-group">
-                                            <input type="text" name="name" placeholder="Enter Your Name"
-                                                data-error="Name is required." required="required">
-                                            <div class="help-block with-errors"></div>
-                                        </div> <!-- single form -->
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="single-form form-group">
-                                            <input type="email" name="email" placeholder="Enter Your Email"
-                                                data-error="Valid email is required." required="required">
-                                            <div class="help-block with-errors"></div>
-                                        </div> <!-- single form -->
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="single-form form-group">
-                                            <textarea name="message" placeholder="Enter Your Message" data-error="Please,leave us a message."
-                                                required="required"></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div> <!-- single form -->
-                                    </div>
-                                    <p class="form-message"></p>
-                                    <div class="col-lg-12">
-                                        <div class="single-form form-group">
-                                            <button class="main-btn" type="submit">CONTACT NOW</button>
-                                        </div> <!-- single form -->
-                                    </div>
-                                </div> <!-- row -->
-                            </form>
+                      
+                            <support-form />
                         </div> <!-- row -->
                     </div>
                 </div> <!-- row -->

@@ -4,7 +4,6 @@ import { useCartStore } from "../store/Cart";
 const cart_store = useCartStore();
 onMounted(() => {
     cart_store.get_stored_cart_count();
-    console.log(cart_store);
 });
 </script>
 

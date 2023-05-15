@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\CartsController;
+use App\Http\Controllers\SupportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,5 @@ Route::post('/cart', [CartsController::class, 'store'])->name('cart');
 Route::get('/cart', [CartsController::class, 'index'])->name('cart');
 Route::get('/search/{name}', [ProductsController::class, 'search'])->name('search');
 Route::get('/checkout', [CartsController::class, 'show'])->name('checkout');
+Route::post('/support', [SupportController::class, 'store'])->name('support');
+Route::get('/admin', [SupportController::class, 'index'])->name('support');

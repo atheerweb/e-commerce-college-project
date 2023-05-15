@@ -69,7 +69,7 @@
                             <a class="navbar-brand" href="index.html">
                                 <img src="/assets/images/logo.png" alt="Logo">
                             </a> <!-- Logo -->
-                            
+
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -90,11 +90,8 @@
                                         <a data-scroll-nav="0" href="#product">Products</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a data-scroll-nav="0" href="#service">Services</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a data-scroll-nav="0" href="#showcase">Portfolio</a>
-                                    </li>
+                                        <a data-scroll-nav="0" href="#about-us"> About</a>
+                                    </li>   
                                     <li class="nav-item">
                                         <a data-scroll-nav="0" href="#team">Team</a>
                                     </li>

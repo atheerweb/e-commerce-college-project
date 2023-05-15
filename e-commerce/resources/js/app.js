@@ -26,6 +26,9 @@ import NavigationCart from "./components/NavigationCart.vue";
 import AvatarIcon from "./components/AvatarIcon.vue";
 import SearchInput from "./components/SearchInput.vue";
 import CartProduct from "./components/CartProduct.vue";
+import OrderSummary from "./components/OrderSummary.vue";
+import SupportForm from "./components/SupportForm.vue";
+import TicketCard from "./components/TicketCard.vue";
 
 // Vuetify
 import "vuetify/styles";
@@ -40,12 +43,26 @@ app.component("navigation-cart", NavigationCart);
 app.component("cart-product", CartProduct);
 app.component("avatar-icon", AvatarIcon);
 app.component("search-input", SearchInput);
+app.component("order-summary", OrderSummary);
+app.component("support-form", SupportForm);
+app.component("ticket-card", TicketCard);
 
 const vuetify = createVuetify({
     components,
     directives,
     icons: {
         defaultSet: "mdi", // This is already the default value - only for display purposes
+    },
+
+    theme: {
+        themes: {
+            light: {
+                dark: false,
+                colors: {
+                    primary: "#fe7865",
+                },
+            },
+        },
     },
 });
 
