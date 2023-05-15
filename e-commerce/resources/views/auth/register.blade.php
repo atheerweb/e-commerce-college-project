@@ -12,15 +12,59 @@
                             @csrf
 
                             <div class="row mb-3">
-                                <label for="name"
-                                    class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+                                <label for="first_name" class="col-md-4 col-form-label text-md-end">First Name</label>
 
                                 <div class="col-md-6">
-                                    <input id="name" type="text"
-                                        class="form-control @error('name') is-invalid @enderror" name="name"
-                                        value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                    <input id="first_name" type="text"
+                                        class="form-control @error('first_name') is-invalid @enderror" name="first_name"
+                                        value="{{ old('first_name') }}" required autocomplete="first_name" autofocus>
 
-                                    @error('name')
+                                    @error('first_name')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="last_name" class="col-md-4 col-form-label text-md-end">Last Name</label>
+
+                                <div class="col-md-6">
+                                    <input id="last_name" type="text"
+                                        class="form-control @error('last_name') is-invalid @enderror" name="last_name"
+                                        value="{{ old('last_name') }}" required autocomplete="last_name" autofocus>
+
+                                    @error('last_name')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="country" class="col-md-4 col-form-label text-md-end">Country</label>
+
+                                <div class="col-md-6">
+                                    <input id="country" type="text"
+                                        class="form-control @error('country') is-invalid @enderror" name="country"
+                                        value="{{ old('country') }}" required autocomplete="country" autofocus>
+
+                                    @error('country')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="address" class="col-md-4 col-form-label text-md-end">Address</label>
+
+                                <div class="col-md-6">
+                                    <input id="address" type="text"
+                                        class="form-control @error('address') is-invalid @enderror" name="address"
+                                        value="{{ old('address') }}" required autocomplete="address" autofocus>
+
+                                    @error('address')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -74,7 +118,7 @@
 
                             <div class="row mb-0">
                                 <div class="col-md-6 offset-md-4">
-                                    <button type="submit" class="main-btn">
+                                    <button type="submit" class="main-btn text-white">
                                         {{ __('Register') }}
                                     </button>
                                 </div>

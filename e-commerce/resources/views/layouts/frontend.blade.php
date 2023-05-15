@@ -13,35 +13,35 @@
     <title>Furnish - Furniture and Decor Website Template</title>
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png">
 
     <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 
     <!--====== Animate css ======-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
 
     <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
 
     <!--====== Slick css ======-->
-    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="/assets/css/slick.css">
 
     <!--====== Line Icons css ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
+    <link rel="stylesheet" href="/assets/css/LineIcons.css">
 
     <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="/assets/css/default.css">
 
     <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <!--====== Responsive css ======-->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
 
     <!--====== Scripts ======-->
 
-    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/app.css') }}">
 
     @vite(['resources/js/app.js'])
 </head>
@@ -67,7 +67,7 @@
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/logo.png" alt="Logo">
+                                <img src="/assets/images/logo.png" alt="Logo">
                             </a> <!-- Logo -->
                             
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -146,28 +146,28 @@
         @yield('content')
 
         <!--====== jquery js ======-->
-        <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-        <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="/assets/js/vendor/jquery-1.12.4.min.js"></script>
 
         <!--====== Bootstrap js ======-->
-        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
 
 
         <!--====== Slick js ======-->
-        <script src="assets/js/slick.min.js"></script>
+        <script src="/assets/js/slick.min.js"></script>
 
         <!--====== Magnific Popup js ======-->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="/assets/js/jquery.magnific-popup.min.js"></script>
 
 
         <!--====== nav js ======-->
-        <script src="assets/js/jquery.nav.js"></script>
+        <script src="/assets/js/jquery.nav.js"></script>
 
         <!--====== Nice Number js ======-->
-        <script src="assets/js/jquery.nice-number.min.js"></script>
+        <script src="/assets/js/jquery.nice-number.min.js"></script>
 
         <!--====== Main js ======-->
-        <script src="assets/js/main.js"></script>
+        <script src="/assets/js/main.js"></script>
     </div>
 
 </body>

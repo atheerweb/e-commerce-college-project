@@ -71,8 +71,7 @@ class ProductsController extends Controller
         $result = Product::where('name' , 'like' , "%".$name."%")->get();
 
         if($result){
-
-            return $result;
+             return $result;
         }
     }
 }

@@ -50,6 +50,8 @@ class CartsController extends Controller
                 'quantity'   => 1,
                 'price'      => $product->sale_price,
                 'user_id'    => auth()->user()->id,
+                'image'      => $product->image_name,
+                'name'       => $product->name
             ]);
         }
         else {
@@ -67,9 +69,12 @@ class CartsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show()
     {
-        //
+         // get user cart
+         $user_cart = Cart::where('user_id', auth()->user()->id)->get();
+
+        return view('pages.checkout', compact('user_cart'));
     }
 
     /**

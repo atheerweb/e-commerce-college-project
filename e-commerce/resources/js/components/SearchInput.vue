@@ -1,5 +1,6 @@
 <script setup>
 import axios from "axios";
+
 import { ref } from "vue";
 const search_text = ref("");
 const loading = ref(false);
@@ -13,6 +14,9 @@ const search = async () => {
     } else {
         items.value = [];
     }
+};
+const redirect = () => {
+    return window.location.replace("/products");
 };
 </script>
 
@@ -31,7 +35,8 @@ const search = async () => {
         return-object
         variant="outlined"
         no-data-text="no results found"
-        @update:search="search"
+        @update:search="search()"
+        @keyup.enter="redirect()"
     ></v-autocomplete>
 </template>
 

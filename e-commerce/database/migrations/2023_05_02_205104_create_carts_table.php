@@ -18,6 +18,8 @@ return new class extends Migration
             $table->integer('quantity');  
             $table->float('price');  
             $table->foreignId('user_id');
+            $table->string('image');
+            $table->string('name');
 
 
 

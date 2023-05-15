@@ -663,9 +663,6 @@ p {
     border-color: #fe7865;
     color: #fff; }
 
-    .single-product-items{
-      height: 35em;
-    }
 .single-product-items .product-item-image {
   position: relative;
   overflow: hidden; }
@@ -833,20 +830,7 @@ p {
     color: #fe7865; }
   .single-services .services-content .title {
     font-size: 20px;
-    color: #fe7865;
-   }
-
-   .pointer{
-    cursor: pointer;
-   }
-
-   .forgot-password-title {
-    color: #fe7865;
-   }
-   .forgot-password-title:hover {
-    
-    color: #c55a4b;
-   }
+    color: #fe7865; }
 
 /*===========================
      7.SHOWCASE css 
@@ -1616,4 +1600,7 @@ p.form-message.error {
           color: #fc924b;
           cursor: pointer; }
 
+.pointer{
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

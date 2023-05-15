@@ -25,6 +25,7 @@ import AddToCartButton from "./components/AddToCartButton.vue";
 import NavigationCart from "./components/NavigationCart.vue";
 import AvatarIcon from "./components/AvatarIcon.vue";
 import SearchInput from "./components/SearchInput.vue";
+import CartProduct from "./components/CartProduct.vue";
 
 // Vuetify
 import "vuetify/styles";
@@ -36,6 +37,7 @@ import "@mdi/font/css/materialdesignicons.css"; // Ensure you are using css-load
 app.use(pinia);
 app.component("add-to-cart-button", AddToCartButton);
 app.component("navigation-cart", NavigationCart);
+app.component("cart-product", CartProduct);
 app.component("avatar-icon", AvatarIcon);
 app.component("search-input", SearchInput);
 

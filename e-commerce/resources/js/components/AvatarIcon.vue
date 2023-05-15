@@ -17,9 +17,17 @@ const logout = async () => {
 
             <v-list>
                 <v-list-item>
+                    <v-list-item-title @click="logout()" class="pointer mb-3">
+                        <v-icon icon="mdi-account" class="logout-icon mr-2" />
+                        <span class="text-capitalize text-grey-darken-1">my profile</span>
+                    </v-list-item-title>
+
                     <v-list-item-title @click="logout()" class="pointer">
-                        <mdicon name="logout" class="logout-icon" />
-                        <span>logout</span>
+                        <v-icon icon="mdi-logout" class="mr-2 text-red" />
+                        <span
+                            class="text-capitalize text-grey-darken-1">
+                            logout
+                        </span>
                     </v-list-item-title>
                 </v-list-item>
             </v-list>
