@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Cart;
-
+use Stripe;
 class CartsController extends Controller
 {
     /**
@@ -99,5 +99,68 @@ class CartsController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function process_payment(Request $request)
+    {
+        // process payment
+
+        $stripe = Stripe::make(env('STRIPE_SECRET'));
+        
+        $order_array = [];
+        foreach($request->order as $order)
+        {
+            $order_array[$order['id']]['order_id'] = $order['id'];
+            $order_array[$order['id']]['order_quantity'] = $order['quantity']
+        }
+
+
+        $token = $stripe->tokens()->create([
+        'card' =>    [
+            'number'=> $request-> card_number,
+            'exp_month'=> $request-> exp_month,
+            'exp_year'=> $request -> exp_year,
+            'cvc'=> $request -> card_cvv
+        ]]
+    );
+
+        if(!$token['id']){
+            session()->flush('error' , 'Stripe token generation failed');
+            return;
+        }
+
+        $customer = $stripe->customers()->create([
+            'name' =>  auth()->user()->first_name.' '.auth()->user()->last_name,
+            'email' =>  auth()->user()->email,
+            'address' => [
+                'line1' =>   auth()->user()->address,
+                'country'=>  auth()->user()->address
+            ],
+            'shipping' => [
+                'name' =>  auth()->user()->first_name.' '.auth()->user()->last_name,
+                'address' => [
+                    'line1' =>   auth()->user()->address,
+                    'country'=>  auth()->user()->address
+                ],
+            ],
+
+            'source'=> $token['id']
+        ]);
+
+        $charge = $stripe->charges()->create([
+            'customer'=> $customer['id'],
+            'currency'=> 'USD',
+            'amount'  => 1,
+            'description' => 'charge for payment'
+        ]);
+
+       
+        if($charge['status'] == 'succeeded'){
+            $customer_id_stripe = $charge['id'];
+            $amount_rec = $charge['amount'];
+            json_encode($order_array)
+        }
+
+  
     }
 }

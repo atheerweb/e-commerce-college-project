@@ -26,3 +26,4 @@ Route::get('/search/{name}', [ProductsController::class, 'search'])->name('searc
 Route::get('/checkout', [CartsController::class, 'show'])->name('checkout');
 Route::post('/support', [SupportController::class, 'store'])->name('support');
 Route::get('/admin', [SupportController::class, 'index'])->name('support');
+Route::post('/process/user/payment ', [CartsController::class, 'process_payment'])->name('support');
