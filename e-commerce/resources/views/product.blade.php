@@ -718,8 +718,8 @@
                                     </div>
                                     <div class="services-content mt-20">
                                         <h5 class="title mb-10">Furnitures</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od
-                                            tempor.</p>
+                                        <p>Furniture is a term used to describe household equipment made of different materials such as wood,metal
+                                            ,plastics,marble,glass,fabrics or related materials and having a variety of different purposes </p>
                                     </div>
                                 </div> <!-- single services -->
 
@@ -729,8 +729,8 @@
                                     </div>
                                     <div class="services-content mt-20">
                                         <h5 class="title mb-10">Decoration</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od
-                                            tempor.</p>
+                                        <p>Discover luxury accessories and
+                                         exclusive home details you won't find anywhere else.</p>
                                     </div>
                                 </div> <!-- single services -->
                             </div>
@@ -741,8 +741,8 @@
                                     </div>
                                     <div class="services-content mt-20">
                                         <h5 class="title mb-10">Consultancy</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od
-                                            tempor.</p>
+                                        <p>We have comprehensive experience providing furniture consultancy services for clients,
+                                             architects, project managers and cost consultants.</p>
                                     </div>
                                 </div> <!-- single services -->
 
@@ -752,8 +752,8 @@
                                     </div>
                                     <div class="services-content mt-20">
                                         <h5 class="title mb-10">Custom Orders</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od
-                                            tempor.</p>
+                                        <p>Discover custom-made furniture orders at everyday low prices from Furnish! Many items are available via custom order with a choice of materials, fabrics,
+                                             — the custom-made furniture possibilities are endless to suit your style and space. </p>
                                     </div>
                                 </div> <!-- single services -->
                             </div>
