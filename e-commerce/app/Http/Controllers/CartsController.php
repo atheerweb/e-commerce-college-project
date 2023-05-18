@@ -111,7 +111,7 @@ class CartsController extends Controller
         foreach($request->order as $order)
         {
             $order_array[$order['id']]['order_id'] = $order['id'];
-            $order_array[$order['id']]['order_quantity'] = $order['quantity']
+            $order_array[$order['id']]['order_quantity'] = $order['quantity'];
         }
 
 
@@ -127,7 +127,7 @@ class CartsController extends Controller
         if(!$token['id']){
             session()->flush('error' , 'Stripe token generation failed');
             return;
-        }
+        };
 
         $customer = $stripe->customers()->create([
             'name' =>  auth()->user()->first_name.' '.auth()->user()->last_name,
@@ -158,7 +158,7 @@ class CartsController extends Controller
         if($charge['status'] == 'succeeded'){
             $customer_id_stripe = $charge['id'];
             $amount_rec = $charge['amount'];
-            json_encode($order_array)
+            json_encode($order_array);
         }
 
   

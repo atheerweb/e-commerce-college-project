@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
+use App\Models\Category;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Product>
@@ -17,6 +18,7 @@ class ProductFactory extends Factory
      */
     public function definition(): array
     {
+        $categories = Category::pluck('id')->toArray();
        $name  =  $this->faker->text(25);
        $price =  $this->faker->numberBetween($min = 100, $max= 900);
         return [
@@ -25,7 +27,8 @@ class ProductFactory extends Factory
             'description' => $this->faker->text(100),
             'image_name'  => $this->faker->imageUrl($width = 200, $height = 300), 
             'price'  => $price, 
-            'sale_price'  => $price - 50,  
+            'sale_price'  => $price - 50, 
+            'category_id'  => $this->faker->randomElement($categories) 
         ];
     }
 }
