@@ -190,10 +190,10 @@
                                                             <li><i class="lni-star-filled"></i></li>
                                                         </ul>
                                                         <span class="regular-price">
-                                                            {{ $product->sale_price }}
+                                                            {{ $product->sale_price }}$
                                                         </span>
                                                         <span class="discount-price">
-                                                            {{ $product->price }}
+                                                            {{ $product->price }}$
                                                         </span>
                                                     </div>
                                                     <add-to-cart-button product-id="{{ $product->id }}"

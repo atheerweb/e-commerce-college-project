@@ -29,6 +29,8 @@ import CartProduct from "./components/CartProduct.vue";
 import OrderSummary from "./components/OrderSummary.vue";
 import SupportForm from "./components/SupportForm.vue";
 import TicketCard from "./components/TicketCard.vue";
+import BillingForm from "./components/BillingForm.vue";
+import CheckOutPage from "./components/CheckOutPage.vue";
 
 // Vuetify
 import "vuetify/styles";
@@ -46,6 +48,8 @@ app.component("search-input", SearchInput);
 app.component("order-summary", OrderSummary);
 app.component("support-form", SupportForm);
 app.component("ticket-card", TicketCard);
+app.component("billing-form", BillingForm);
+app.component("check-out-page", CheckOutPage);
 
 const vuetify = createVuetify({
     components,
